@@ -32,6 +32,8 @@ class MyApp extends StatelessWidget {
             return MaterialPageRoute(builder: (_)=> const FriesPizza());
           case '/webView':
             return MaterialPageRoute(builder: (_)=> WebView(uri: (settings.arguments as Map)['uri'],));
+          default:
+            return null;
         }
         },
     );
